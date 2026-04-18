@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Greenhouse Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="sidebar">
+  <div class="nav-item active">🏠</div>
+  <div class="nav-item">🌡</div>
+  <div class="nav-item">📊</div>
+</div>
+
+<div class="main">
+
+  <div class="topbar">
+  <div class="logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/2909/2909765.png" />
+    <div>
+      <h1>GreenSync</h1>
+      <span>Smart Agriculture System</span>
+    </div>
+  </div>
+
+
+</div>
+
+  <div class="container">
+
+    <!-- Sensors -->
+    <div class="card">
+      <h2>Live Sensors</h2>
+
+      <p>Temperature</p>
+      <div class="value" id="tempValue">--</div>
+
+      <p>Soil Moisture</p>
+      <div class="value" id="soilValue">--</div>
+
+
+      <p id="cloudStatus">Connecting...</p>
+    </div>
+
+    <!-- Chart -->
+    <div class="card">
+      <h2>Analytics</h2>
+      <canvas id="sensorChart"></canvas>
+    </div>
+
+    <!-- Alerts -->
+    <div class="card">
+      <h2>System Alerts</h2>
+      <ul id="alertsList"></ul>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

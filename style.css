@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  display: flex;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 60px;
+  height: 100vh;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.nav-item {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 18px;
+}
+
+.nav-item:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.nav-item.active {
+  background: #22c55e;
+  color: black;
+}
+/* Main */
+.main {
+  flex: 1;
+  /* padding: 20px 30px; */
+  width: 100%;
+  padding: 20px 40px;
+
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  transition: 0.2s;
+}
+
+/* Header */
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.container {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr 1.2fr;
+  gap: 25px;
+  width: 100%;
+}
+.container {
+  align-items: stretch;
+}
+/* Cards */
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.card {
+  width: 100%;
+  height: 100%;
+}
+
+/* Sensor Values */
+.value {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Status */
+#cloudStatus {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.connected {
+  color: #22c55e;
+}
+
+.error-status {
+  color: #ef4444;
+}
+
+/* Alerts */
+.alert-item {
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 8px;
+  background: rgba(255,255,255,0.08);
+}
+
+.alert-item.error {
+  background: rgba(239,68,68,0.2);
+  color: #f87171;
+}
+
+/* Chart Fix */
+canvas {
+  background: transparent !important;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.logo span {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.05);
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.user img {
+  border-radius: 50%;
+}
